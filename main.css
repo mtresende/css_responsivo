@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+.header{
+    background-color: rgb(26, 26, 82);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header h1{
+    margin-left: 16px;
+    font-size: 36px;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 0;
+    font-style: italic;
+}
+
+header a{
+    border: none;
+    border-radius: 5px;
+    margin-left: 8px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header div{
+    margin-right: 16px;
+}
+
+header a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#about{
+    margin-top: 24px;
+}
+
+#about h2{
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#about img{
+    width: 470px;
+    padding-right: 20px;
+}
+
+#products{
+    margin-top: 36px;
+    margin-bottom: 120px;
+}
+
+#products h2{
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container-products{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-products article{
+    width: 340px;
+}
+
+#products img{
+    width: 341.5px;
+}
+
+#products h3{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.container-products header{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-products button{
+    padding: 6px;
+    width: 100%;
+    background-color: rgb(26, 26, 82);
+    color: #fff;
+    font-size: 14px;
+    border: none
+}
+
+.container-products button:hover{
+    background-color: rgb(44, 44, 134);
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(26, 26, 82);
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+footer h1{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+footer img{
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 23px;
+}
+
+#logo{
+    font-size: 36px;
+    font-family: 'Bruno Ace', cursive;
+    font-weight: 0;
+    font-style: italic;
+    margin-left: -105px;
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        max-width: 90%;
+        display: block;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    header h1{
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    header div{
+        margin-right: 0;
+    }
+
+    #about{
+        margin-top: 24px;
+    }
+    
+    #about h2{
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-bottom: 28px;
+    }
+    
+    #about img{
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .container-products{
+        max-width: 90%;
+    }
+
+    .container-products article{
+        margin-bottom: 36px;
+    }
+
+    footer{
+        flex-direction: column;
+        display: block;
+    }
+
+    footer img{
+        width: 40px;
+        margin-left: 13px;
+    }
+
+    #logo{
+        margin-top: 8px;
+        text-align: center;
+        margin-left: -15px;
+    }
+
+    blockquote{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    footer h1{
+        font-size: 16px;
+    }
+
+    footer img{
+        width: 35px;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .container-products{
+        max-width: 90%;
+    }
+
+    #logo{
+        font-size: 30px;
+        margin-left: -45px;
+    }
+}
